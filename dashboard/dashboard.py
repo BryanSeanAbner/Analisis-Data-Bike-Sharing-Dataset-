@@ -34,8 +34,8 @@ def create_byhour_df(df):
 
     return byhour_df
 
-data_df = pd.read_csv("all_data.csv")
-data_df = pd.read_csv("all_data1.csv")
+data_df = pd.read_csv("https://raw.githubusercontent.com/BryanSeanAbner/Analisis-Data-Bike-Sharing-Dataset-/main/dashboard/all_data.csv")
+data1_df = pd.read_csv("https://raw.githubusercontent.com/BryanSeanAbner/Analisis-Data-Bike-Sharing-Dataset-/main/dashboard/all_data1.csv")
 
 datetime_columns = ["dteday"]
 data_df.sort_values(by="dteday", inplace=True)
